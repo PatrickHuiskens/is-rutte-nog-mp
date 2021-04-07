@@ -46,12 +46,65 @@
                 color: #ddd;
             }
         }
+
+        .countup {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .countup .timeel {
+            display: inline-block;
+            padding: 8px;
+            background: #151515;
+            margin-right: -4px;
+            color: white;
+            min-width: 2rem;
+            margin-left: 13px;
+            margin-bottom: 16px;
+            border-radius: 8px 0 0 8px;
+        }
+        .countup span[class*="timeRef"] {
+            border-radius: 0 8px 8px 0;
+            margin-left: 0;
+            background: #01689b;;
+            color: white;
+        }
+
+        img{
+            max-height: 30vh;
+        }
     </style>
+
+    <script type="text/javascript" src="scripts/countdown.js"></script>
 </head>
 <body>
-    <div>
-        <h1>Ja</h1>
-        <h2>Maar wel demissionair..</h2>
+    <div class="top-section">
+        <br>
+        <h1>Ja, Rutte is nog steeds minister president.</h1>
+        <h2>Maar wel demissionair.</h2>
+        <br>
+        <h3>Huidig kabinet: Rutte III (demissionair)</h3>
     </div>
+    
+    <div>
+        <img src="img/rutte-blij.jpg" />
+    </div>
+
+    <div class="timer">
+        <br>
+        <h3>Het duurt al...</h3>
+        <div class="countup" id="countup1">
+            <span class="timeel years">00</span>
+            <span class="timeel timeRefYears">jaar</span>
+            <span class="timeel days">00</span>
+            <span class="timeel timeRefDays">dagen</span>
+            <span class="timeel hours">00</span>
+            <span class="timeel timeRefHours">uren</span>
+            <span class="timeel minutes">00</span>
+            <span class="timeel timeRefMinutes">minuten</span>
+            <span class="timeel seconds">00</span>
+            <span class="timeel timeRefSeconds">seconden</span>
+        </div>
+    </div>
+    <div id="cpcontainer">&nbsp;</div>  
 </body>
 </html>
